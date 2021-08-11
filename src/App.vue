@@ -1,4 +1,5 @@
 <template>
+<!-- eslint-disable-next-line vue/max-attributes-per-line -->
   <app-header/>
   <!-- Introduction -->
   <section class="mb-8 py-20 text-white text-center relative">

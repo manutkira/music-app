@@ -1,4 +1,5 @@
 <template>
+<!-- eslint-disable-next-line vue/max-attributes-per-line -->
     <!-- Header -->
   <header id="header" class="bg-gray-700">
     <nav class="container mx-auto flex justify-start items-center py-5 px-4">
