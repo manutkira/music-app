@@ -259,8 +259,6 @@
 </template>
 
 <script>
-import './assets/main.css';
-import './assets/tailwind.css';
 import AppHeader from './components/header.vue';
 import AuthModal from './components/auth.vue';
 
