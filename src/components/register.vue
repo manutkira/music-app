@@ -125,7 +125,9 @@ export default {
       }
       this.reg_alert_variant = 'bg-green-500';
       this.reg_alert_msg = 'succeed! Your accout is has been created.';
-      window.location.reload();
+      setTimeout(() => {
+        window.location.reload();
+      }, 1500);
     },
   },
 };

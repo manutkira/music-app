@@ -8,12 +8,8 @@
     <div class="container mx-auto">
       <div class="text-white main-header-content">
         <h1 class="font-bold text-5xl mb-5">Listen to Great Music!</h1>
-        <p class="w-full md:w-8/12 mx-auto">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit.
-          Phasellus et dolor mollis, congue augue non, venenatis elit.
-          Nunc justo eros, suscipit ac aliquet imperdiet, venenatis et
-          sapien. Duis sed magna pulvinar, fringilla lorem eget,
-          ullamcorper urna.
+        <p class="w-full md:w-8/12 mx-auto c" >
+          Listen to Your Favorite Artists, Songs and Albums for Free. Try MusicApp Today! Find Your Favorite Albums. Discover Great New Music. Curated Playlists. Listen on Several Devices. Play Music for Free.
         </p>
       </div>
     </div>
