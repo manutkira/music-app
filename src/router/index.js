@@ -25,7 +25,6 @@ const routes = [
     },
     component: () => import('../views/manage.vue'),
     beforeEnter: ((to, from, next) => {
-      console.log('manage route guard');
       next();
     }),
   },
@@ -55,8 +54,6 @@ router.beforeEach((to, from, next) => {
   } else {
     next({ name: 'home' });
   }
-
-  next();
 });
 
 export default router;
