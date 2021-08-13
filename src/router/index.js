@@ -16,9 +16,22 @@ const routes = [
     component: () => import(/* webpackChunkName: "about" */ '../views/About.vue'),
   },
   {
-    path: '/manage',
+    path: '/manage-music',
+    // alias: '/manage',
     name: 'manage',
     component: () => import('../views/manage.vue'),
+    beforeEnter: ((to, from, next) => {
+      console.log('manage route guard');
+      next();
+    }),
+  },
+  {
+    path: '/manage',
+    redirect: { name: 'manage' },
+  },
+  {
+    path: '/:catchAll(.*)*',
+    redirect: { name: 'home' },
   },
 ];
 
@@ -26,6 +39,11 @@ const router = createRouter({
   history: createWebHashHistory(),
   routes,
   linkExactActiveClass: 'text-yellow-500',
+});
+router.beforeEach((to, from, next) => {
+  console.log('global guard');
+
+  next();
 });
 
 export default router;
