@@ -1,4 +1,5 @@
 import { createRouter, createWebHashHistory } from 'vue-router';
+import store from '../store';
 import Home from '../views/Home.vue';
 
 const routes = [
@@ -19,6 +20,9 @@ const routes = [
     path: '/manage-music',
     // alias: '/manage',
     name: 'manage',
+    meta: {
+      requiresAuth: true,
+    },
     component: () => import('../views/manage.vue'),
     beforeEnter: ((to, from, next) => {
       console.log('manage route guard');
@@ -41,7 +45,16 @@ const router = createRouter({
   linkExactActiveClass: 'text-yellow-500',
 });
 router.beforeEach((to, from, next) => {
-  console.log('global guard');
+  if (!to.matched.some((record) => record.meta.requiresAuth)) {
+    next();
+    return;
+  }
+
+  if (store.state.userLoggedIn) {
+    next();
+  } else {
+    next({ name: 'home' });
+  }
 
   next();
 });
