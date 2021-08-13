@@ -18,9 +18,11 @@ const db = firebase.firestore();
 const storage = firebase.storage();
 
 const userCollection = db.collection('users');
+const songsCollection = db.collection('songs');
 export {
   auth,
   db,
   userCollection,
+  songsCollection,
   storage,
 };
