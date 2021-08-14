@@ -28,7 +28,7 @@ export default createStore({
         age: payload.age,
         country: payload.country,
       });
-      userCred.user.updateProfile({
+      await userCred.user.updateProfile({
         displayName: payload.name,
       });
       commit('toggleAuth');
