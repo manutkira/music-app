@@ -12,7 +12,8 @@
             <i class="fa fa-compact-disc float-right text-green-400 text-2xl"></i>
           </div>
           <div class="p-6">
-            <composition-item v-for="song in songs" :key="song.docID"/>
+            <composition-item v-for="(song, index) in songs" :key="song.docID" :song="song" :updateSong="updateSong"
+            :index="index"/>
           </div>
         </div>
       </div>
@@ -47,6 +48,12 @@ export default {
 
       this.songs.push(song);
     });
+  },
+  methods: {
+    updateSong(index, values) {
+      this.songs[index].modified_name = values.modified_name;
+      this.songs[index].genre = values.genre;
+    },
   },
   // beforeRouteLeave(to, from, next) {
   //   this.$refs.upload.cancelUpload();
