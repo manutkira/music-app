@@ -1,6 +1,6 @@
 <template>
     <!-- Composition Items -->
-            <div class="border border-gray-200 p-3 mb-4 rounded">
+            <div class="border border-pink-400 p-3 mb-4 rounded">
               <div v-show="!showForm">
                 <h4 class="fss inline-block text-2xl font-bold w-10/12">{{song.modified_name}}</h4>
                 <button class="ml-1 py-1 px-2 text-sm rounded text-white bg-red-600 float-right" @click.prevent="deleteSong">

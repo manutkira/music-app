@@ -1,7 +1,7 @@
 <template>
 <!-- eslint-disable-next-line vue/max-attributes-per-line -->
     <!-- Header -->
-  <header id="header" class="bg-gray-700">
+  <header id="header" class="bg-gray-500">
     <nav class="container mx-auto flex justify-start items-center py-5 px-4">
       <!-- App Name -->
       <router-link class="text-white font-bold uppercase text-4xl mr-2 mt-0" :to="{ name: 'home' }" exact-active-class="no-active">Music</router-link>
