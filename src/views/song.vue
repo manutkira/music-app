@@ -140,7 +140,9 @@ export default {
       const date = d.getDate();
       const month = months[d.getMonth()];
       const year = d.getFullYear();
-      return `${day} ${date} ${month} ${year}`;
+      const hour = d.getHours();
+      const minute = d.getMinutes();
+      return `${day} ${date} ${month} ${year}, ${hour}:${minute}`;
     },
     ...mapActions(['newSong']),
     async addComment(values, { resetForm }) {
