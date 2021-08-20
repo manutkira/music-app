@@ -110,6 +110,38 @@ export default {
     this.getComments();
   },
   methods: {
+    dateBuilder() {
+      const d = new Date();
+      const months = [
+        'January',
+        'February',
+        'March',
+        'April',
+        'May',
+        'June',
+        'July',
+        'August',
+        'September',
+        'October',
+        'November',
+        'December',
+      ];
+      const days = [
+        'Sunday',
+        'Monday',
+        'Tuesday',
+        'Wednesday',
+        'Thursday',
+        'Friday',
+        'Saturday',
+      ];
+
+      const day = days[d.getDay()];
+      const date = d.getDate();
+      const month = months[d.getMonth()];
+      const year = d.getFullYear();
+      return `${day} ${date} ${month} ${year}`;
+    },
     ...mapActions(['newSong']),
     async addComment(values, { resetForm }) {
       this.comment_in_submission = true;
@@ -118,7 +150,7 @@ export default {
       this.comment_alert_message = 'Please wait! Your comment is being submmited';
       const comment = {
         content: values.comment,
-        datePosted: new Date().toString(),
+        datePosted: this.dateBuilder(),
         sid: this.$route.params.id,
         name: auth.currentUser.displayName,
         uid: auth.currentUser.uid,
