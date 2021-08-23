@@ -6,9 +6,11 @@
       style="background-image: url(assets/img/header.png)"></div>
     <div class="container mx-auto">
       <div class="text-white main-header-content">
-        <h1 class="font-bold text-5xl mb-5">Listen to Great Music!</h1>
+        <h1 class="font-bold text-5xl mb-5">
+          {{ $t('home.listen') }}
+        </h1>
         <p class="w-full md:w-8/12 mx-auto c" >
-          Listen to Your Favorite Artists, Songs and Albums for Free. Try MusicApp Today! Find Your Favorite Albums. Discover Great New Music. Curated Playlists. Listen on Several Devices. Play Music for Free.
+          {{$t('home.p')}}
         </p>
       </div>
     </div>
@@ -21,7 +23,7 @@
   <section class="container mx-auto">
     <div class="bg-white rounded border border-pink-400 relative flex flex-col">
       <div class="px-6 pt-6 pb-5 font-bold border-b border-gray-400" v-icon.yellow.right="'headphones-alt'">
-        <span class="card-title">Songs</span>
+        <span class="card-title">{{$t('home.song')}}</span>
         <!-- Icon -->
       </div>
       <!-- Playlist -->

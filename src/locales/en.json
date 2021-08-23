@@ -1,0 +1,16 @@
+{
+  "header": {
+    "about": "About",
+    "logOut": "Log Out",
+    "manage": "Manage",
+    "music": "Music"
+  },
+  "home": {
+    "listen": "Listen to Great Music",
+    "p": "Listen to Your Favorite Artists, Songs and Albums for Free. Try MusicApp Today! Find Your Favorite Albums. Discover Great New Music. Curated Playlists. Listen on Several Devices. Play Music for Free.",
+    "song": "song"
+  },
+  "song": {
+    "comment_count": "No Comment | 1 Comment | {count} Comments"
+  }
+}
