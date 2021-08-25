@@ -10,6 +10,10 @@
     "p": "Listen to Your Favorite Artists, Songs and Albums for Free. Try MusicApp Today! Find Your Favorite Albums. Discover Great New Music. Curated Playlists. Listen on Several Devices. Play Music for Free.",
     "song": "song"
   },
+  "register": {
+    "TOS": "Terms of Service",
+    "accept": "I accept Music's {0}"
+  },
   "song": {
     "comment_count": "No Comment | 1 Comment | {count} Comments"
   }

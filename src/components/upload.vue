@@ -52,6 +52,17 @@ export default {
           return;
         }
 
+        if (!navigator.onLine) {
+          this.upload.push({
+            task: {},
+            current_progress: 100,
+            variant: 'bg-red-500',
+            name: file.name,
+            icon: 'fas fa-times',
+          });
+          return;
+        }
+
         const storageRef = storage.ref();
         const songsRef = storageRef.child(`songs/${file.name}`);
         const task = songsRef.put(file);

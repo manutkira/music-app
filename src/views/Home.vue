@@ -6,7 +6,7 @@
       style="background-image: url(assets/img/header.png)"></div>
     <div class="container mx-auto">
       <div class="text-white main-header-content">
-        <h1 class="font-bold text-5xl mb-5">
+        <h1 class="font-bold text-5xl mb-8">
           {{ $t('home.listen') }}
         </h1>
         <p class="w-full md:w-8/12 mx-auto c" >

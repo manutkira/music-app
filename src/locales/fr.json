@@ -10,6 +10,10 @@
     "p": "Écoutez vos artistes, chansons et albums préférés gratuitement. Essayez MusicApp aujourd'hui ! Trouvez vos albums préférés. Découvrez la grande nouvelle musique. Listes de lecture organisées. Écoutez sur plusieurs appareils. Jouez de la musique gratuitement.",
     "song": "chanson"
   },
+  "register": {
+    "TOS": "",
+    "accept": ""
+  },
   "song": {
     "comment_count": "Pas de commentaire | 1 commentaire | {count} commentaires"
   }

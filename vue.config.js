@@ -9,4 +9,12 @@ module.exports = {
       enableLegacy: true,
     },
   },
+  pwa: {
+    name: 'ManutMusic',
+    themeColor: '#ff5e3a',
+    manifestOptions: {
+      short_name: 'MM',
+
+    },
+  },
 };
