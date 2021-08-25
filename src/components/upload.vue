@@ -53,7 +53,7 @@ export default {
         }
 
         if (!navigator.onLine) {
-          this.upload.push({
+          this.uploads.push({
             task: {},
             current_progress: 100,
             variant: 'bg-red-500',
