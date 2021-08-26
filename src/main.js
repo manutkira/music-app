@@ -10,6 +10,10 @@ import './assets/tailwind.css';
 import './assets/main.css';
 import './registerServiceWorker';
 import GlobalComponent from './includes/_global';
+import ProgressBar from './includes/progress-bar';
+import 'nprogress/nprogress.css';
+
+ProgressBar(router);
 
 let app;
 auth.onAuthStateChanged(() => {

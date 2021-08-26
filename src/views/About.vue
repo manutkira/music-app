@@ -5,3 +5,13 @@
   </div>
 </main>
 </template>
+
+<script>
+import DummyModule from '../store/modules/dummy';
+
+export default {
+  created() {
+    this.$store.registerModule('dummy', DummyModule);
+  },
+};
+</script>

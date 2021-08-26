@@ -1,25 +1,21 @@
 import { createRouter, createWebHistory } from 'vue-router';
 import store from '../store';
-import Home from '../views/Home.vue';
-import Song from '../views/song.vue';
-import Manage from '../views/manage.vue';
-import About from '../views/About.vue';
 
 const routes = [
   {
     path: '/',
     name: 'home',
-    component: Home,
+    component: () => import('../views/Home.vue'),
   },
   {
     path: '/song/:id',
     name: 'song',
-    component: Song,
+    component: () => import(/* webpackChunkName: "groupedChunk" */'../views/song.vue'),
   },
   {
     path: '/about',
     name: 'about',
-    component: About,
+    component: () => import('../views/About.vue'),
   },
   {
     path: '/manage-music',
@@ -28,7 +24,7 @@ const routes = [
     meta: {
       requiresAuth: true,
     },
-    component: Manage,
+    component: () => import(/* webpackChunkName: "groupedChunk" */'../views/manage.vue'),
     beforeEnter: ((to, from, next) => {
       next();
     }),
