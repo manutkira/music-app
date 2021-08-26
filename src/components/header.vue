@@ -52,7 +52,9 @@ export default {
     };
   },
   computed: {
-    ...mapState(['userLoggedIn']),
+    ...mapState({
+      userLoggedIn: (state) => state.auth.userLoggedIn,
+    }),
     currentLocale() {
       return this.$i18n.locale === 'km' ? 'ខ្មែរ' : 'English';
     },
